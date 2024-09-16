@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background: url(images/cliff_ocean.jpg) no-repeat;
+  height: 400px;
+  z-index: 0;
+}
+
+.img {
+  position: relative;
+  margin: 0 auto;
+  top: 80px;
+  width: 610px;
+  display: flex;
+  background-color: #eaf1fb;
+  gap: 100px;
+}
+
+.img ul {
+  display: flex;
+}
+
+.img li {
+  list-style-type: none;
+  padding: 30px 20px;
+  margin: auto 0;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.img li:hover {
+  background-color: #a9e724;
+  color: #fff;
+}
+.img li a {
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.img li a:link {
+  color: #000;
+}
+.img li a:visited {
+  color: #818db3;
+}
+.img li a:hover {
+  color: #fff;
+  width: 100px;
+  background-color: #a9e724;
+}
+.img li a:active {
+  color: #fff;
+  background-color: #a9e724;
+}
+
+.container {
+  padding: 60px 90px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container h1,
+h2 {
+  padding: 20px 0;
+}
+
+.container h1 {
+  color: #a9e724;
+}
+
+.partners {
+  background-color: rgba(15, 99, 224, 0.541);
+}
+
+.partners ul {
+  display: flex;
+  padding: 20px 100px;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.partners ul li {
+  list-style-type: none;
+  width: 30px;
+}
+
+.partners ul li img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+footer {
+    padding: 40px 200px;
+    background-color: #d2fc78;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+footer div ul {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+footer div ul li {
+    list-style-type: none;
+}
+
+footer div ul li img {
+    width: 30px;
+}
