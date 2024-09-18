@@ -12,6 +12,16 @@ header {
   padding-top: 48px;
 }
 
+#activities header {
+  background: no-repeat lightgrey url(images/runfly.jpg);
+  background-size: 1500px;
+}
+
+#contact header {
+  background: no-repeat lightgrey url(images/cliff_rock.jpg);
+  background-size: 1500px;
+}
+
 .main-header {
   background-color: rgb(255, 255, 255, 0.8);
   min-height: 100px;
@@ -44,10 +54,7 @@ header {
   text-transform: uppercase;
   font-size: 14px;
 }
-/* .main-header li:hover {
-  background-color: #a9e724;
-  color: #fff;
-} */
+
 .main-header li a {
   text-decoration: none;
   color: #888;
@@ -76,7 +83,7 @@ h2 {
   padding: 20px 0;
 }
 
-.container h1 {
+h1 {
   color: #a9e724;
 }
 
@@ -135,4 +142,95 @@ footer div ul li img {
 
 footer .text {
   padding: 0 160px;
+}
+
+/* Activities */
+#activities table {
+  width: 1000px;
+  margin: 48px auto;
+}
+
+#activities caption {
+  background: #852b1b;
+  /* height: 40px; */
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 16px 0;
+}
+
+#activities thead {
+  background: #bde1ff;
+}
+
+#activities tbody {
+  background: #eeffe6;
+  text-align: center;
+}
+
+#activities th,
+td {
+  width: 225px;
+  height: 75px;
+  vertical-align: middle;
+  border: 1px solid #852b1b;
+}
+
+th:first-child {
+  width: 125px;
+  height: 20px;
+  background: #4977d1;
+  color: #fff;
+}
+
+td:first-child {
+  font-weight: bold;
+  background: #bde1ff;
+}
+
+/* Contact page */
+#contact {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#contact form {
+    padding: 10px 0 70px 10px;
+}
+form fieldset {
+  padding: 30px;
+  border: 2px solid #9ed034;
+}
+
+form legend {
+  color: #4977d1;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input {
+    width: 450px;
+}
+
+form textarea {
+    width: 450px;
+    height: 200px;
+}
+
+input[type="radio"] {
+    width: inherit;
+}
+
+input[type="submit"] {
+    width: 120px;
+    margin: 10px 0 0 330px;
+    font-weight: bold; 
+    color: #fff;
+    border: #4288c3;
+    background: #4977d1;
+    padding: 10px 35px;
+    font-size: 16px;
 }
