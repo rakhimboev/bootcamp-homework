@@ -283,3 +283,26 @@ input[type="submit"] {
   width: 450px;
   height: 250px;
 }
+
+/* Home Current time */
+#home .timeofday {
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 300px;
+  text-align: center;
+  background: linear-gradient(
+    0deg,
+    rgba(251, 215, 139, 1) 0%,
+    rgba(118, 213, 245, 1) 100%
+  );
+}
+
+/* Home Current time */
+#home .timeofday span {
+  color: #3a3a3a;
+}
+
+/* Home Current time */
+#home .timeofday #clock {
+  color: #125688;
+}
