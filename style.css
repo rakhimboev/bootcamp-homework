@@ -92,14 +92,14 @@ h1 {
   background-color: #4288c3;
 }
 
-.partners ul {
+.partners #partners-list {
   width: 1200px;
   padding: 32px 0;
   margin: 0 auto;
   text-align: center;
 }
 
-.partners ul li {
+.partners #partners-list .partner {
   display: inline-block;
   margin: 0 12px;
   padding: 20px 24px;
