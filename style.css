@@ -31,7 +31,7 @@ main {
   min-height: 100px;
   height: 100px;
   margin: 32px auto 0 auto;
-  width: 670.5px;
+  width: 672px;
 }
 
 .main-header img {
@@ -241,6 +241,24 @@ input[type="submit"] {
   /* background: #4977d1; */
   padding: 10px 35px;
   font-size: 16px;
+}
+
+#contact .randomcode {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  margin-left: 190px;
+}
+
+#contact .randomcode input {
+  width: 150px;
+  padding: 5px 0;
+  margin-right: 16px;
+}
+
+#contact .randomcode #codes {
+  background-color: #c4c2c2;
+  padding: 10px;
 }
 
 /* Cliffs page */
