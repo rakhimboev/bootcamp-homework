@@ -12,6 +12,10 @@ header {
   padding-top: 48px;
 }
 
+main {
+  margin: 50px;
+}
+
 #activities header {
   background: no-repeat lightgrey url(images/runfly.jpg);
   background-size: 1500px;
@@ -27,7 +31,7 @@ header {
   min-height: 100px;
   height: 100px;
   margin: 32px auto 0 auto;
-  width: 700px;
+  width: 670.5px;
 }
 
 .main-header img {
@@ -193,6 +197,10 @@ td:first-child {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+#contact header {
+  font-family: "Times New Roman", Times, serif;
+}
+
 #contact form {
   padding: 10px 0 70px 10px;
 }
@@ -230,7 +238,7 @@ input[type="submit"] {
   font-weight: bold;
   color: #fff;
   border: #4288c3;
-  background: #4977d1;
+  /* background: #4977d1; */
   padding: 10px 35px;
   font-size: 16px;
 }
@@ -284,7 +292,6 @@ input[type="submit"] {
   height: 250px;
 }
 
-/* Home Current time */
 #home .timeofday {
   padding: 20px;
   font-family: Arial, Helvetica, sans-serif;
@@ -297,12 +304,10 @@ input[type="submit"] {
   );
 }
 
-/* Home Current time */
 #home .timeofday span {
   color: #3a3a3a;
 }
 
-/* Home Current time */
 #home .timeofday #clock {
   color: #125688;
 }

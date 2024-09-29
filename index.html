@@ -7,22 +7,22 @@
     <title>Homework</title>
   </head>
   <body id="home">
+    <header>
+      <div class="main-header">
+        <img src="images/logo.png" alt="logo" />
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="cliffs.html">Cliffs</a></li>
+          <li><a href="activities.html">Activities</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <section class="timeofday">
+        <span>Your Current Local Time: </span>
+        <span id="clock"></span>
+      </section>
+    </header>
     <main>
-      <header>
-        <div class="main-header">
-          <img src="images/logo.png" alt="logo" />
-          <ul>
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="cliffs.html">Cliffs</a></li>
-            <li><a href="activities.html">Activities</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <section class="timeofday">
-          <span>Your Current Local Time: </span>
-          <span id="clock"></span>
-        </section>
-      </header>
       <div class="container">
         <h1>Introducing California's Greatest Cliffs</h1>
         <h2>What is so unique about California cliffs?</h2>
@@ -42,9 +42,10 @@
           which is the most popular and most visited.
         </p>
       </div>
-      <div class="partners">
-        <ul id="partners-list">
-          <!-- <li class="partner">
+    </main>
+    <div class="partners">
+      <ul id="partners-list">
+        <!-- <li class="partner">
             <img src="images/partners/partner-bustour.png" alt="a" />
           </li>
           <li class="partner">
@@ -62,9 +63,8 @@
           <li class="partner">
             <img src="images/partners/partner-tourgroup.png" alt="s" />
           </li> -->
-        </ul>
-      </div>
-    </main>
+      </ul>
+    </div>
     <footer>
       <div>
         <p>&copy; Copyright 2022 :: GreatCliffs.com</p>
@@ -81,92 +81,7 @@
       </p>
     </footer>
     <!-- Java Script coding -->
-    <script>
-      function currentTime() {
-        var d = new Date();
-        var hr = d.getHours();
-        var min = d.getMinutes();
-        var sec = d.getSeconds();
-        var ampm;
-
-        // UTC (Greenwich Mean Time) hour
-        var utchr = d.getUTCHours();
-
-        // Calculate time difference between local hour and GMT hour
-        var timeDiff = hr - utchr;
-
-        // Adjust time difference to be positive if negative
-        var adjTimeDiff = timeDiff < 0 ? timeDiff + 24 : timeDiff;
-
-        // Determine time zone based on the time difference
-        var timeZone = "";
-        switch (adjTimeDiff) {
-          case 5:
-            timeZone = "ET"; // Eastern Time (US & Canada)
-            break;
-          case 6:
-            timeZone = "CT"; // Central Time (US & Canada)
-            break;
-          case 7:
-            timeZone = "MT"; // Mountain Time (US & Canada)
-            break;
-          case 8:
-            timeZone = "PT"; // Pacific Time (US & Canada)
-            break;
-          default:
-            timeZone = "Unknown Time Zone"; // Handle other cases
-        }
-
-        if (sec < 10) {
-          sec = "0" + sec;
-        }
-        if (min < 10) {
-          min = "0" + min;
-        }
-
-        if (hr == 12) {
-          ampm = "PM";
-        } else if (hr > 12) {
-          hr -= 12;
-          ampm = "PM";
-        } else {
-          ampm = "AM";
-        }
-
-        var time = hr + ":" + min + ":" + sec + " " + ampm + " " + timeZone; // Added timeZone to the display
-
-        document.getElementById("clock").innerText = time;
-        setInterval(currentTime, 1000);
-      }
-
-      currentTime();
-
-      var partnerImages = [
-        "partner-bustour.png",
-        "partner-cabinrental.png",
-        "partner-campingadv.png",
-        "partner-collegetours.png",
-        "partner-rentalbike.png",
-        "partner-tourgroup.png",
-      ];
-
-      // Array to hold the generated image list HTML
-      var imageList = [];
-
-      // Loop through the filenames and create <li> elements
-      for (var i = 0; i < partnerImages.length; i++) {
-        // Generate the HTML for each <li> with an <img> tag
-        var listItem =
-          '<li class="partner"><img src="images/partners/' +
-          partnerImages[i] +
-          '" alt="Partner ' +
-          (i + 1) +
-          '"></li>';
-        imageList.push(listItem);
-      }
-
-      // Insert the generated list items into the <ul> with id="partners-list"
-      document.getElementById("partners-list").innerHTML = imageList.join("");
-    </script>
+    <script src="js/diglock.js"></script>
+    <script src="js/site_scripts.js"></script>
   </body>
 </html>
