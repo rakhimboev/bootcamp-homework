@@ -200,6 +200,31 @@ td:first-child {
   background-color: #f2f2f2;
 }
 
+#activities main #displaySelected {
+  visibility: hidden;
+  margin: 1em auto 0 13em;
+  width: 500x;
+  border: 2px solid #9ed034;
+  padding: 0.75em;
+}
+#activities main #displaySelected #result,
+#activities main #displaySelected #sendinfo {
+  display: inline-block;
+  margin: 0;
+}
+#activities main #result {
+  min-height: 50px;
+  width: 300px;
+  padding: 0;
+}
+#activities main #result h4 {
+  margin-bottom: 1em;
+  font-size: 1.15em;
+}
+#activities main #displaySelected #sendinfo input [type="email"] {
+  width: 200px;
+}
+
 /* Contact page */
 #contact {
   font-family: Arial, Helvetica, sans-serif;
